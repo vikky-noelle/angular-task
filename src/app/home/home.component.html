@@ -1,0 +1,72 @@
+<app-header></app-header>
+
+<div *ngIf="!loginStatus" class="logged-out-view">
+  <div class="sign-container">
+    <div class="sign-tab">
+      <button class="login" (click)="loginWindow()">Login</button>
+      <button class="register" (click)="registerWindow()">Register</button>
+    </div>
+    <div class="login-window">
+      <div class="main-login">
+        <h1>Login</h1>
+        <label for="">email (eve.holt@reqres.in)</label>
+        <input type="text" placeholder="email" name="" id="" #lusername />
+        <label for="">password (cityslicka)</label>
+        <input
+          type="password"
+          placeholder="password"
+          name=""
+          id=""
+          #lpassword
+        />
+        <button (click)="login_send(lusername.value, lpassword.value)">
+          Login
+        </button>
+      </div>
+      <img class="left-img" src="/assets/images/img2.png" alt="" />
+      <img class="right-img" src="/assets/images/img3.png" alt="" />
+    </div>
+    <div class="register-window">
+      <div class="main-login">
+        <h1>Sign Up</h1>
+        <label for="">username</label>
+        <input
+          type="text"
+          placeholder="type a unique username"
+          name=""
+          id=""
+          #rusername
+        />
+        <label for="">e-mail (eve.holt@reqres.in)</label>
+        <input
+          type="text"
+          placeholder="type your email"
+          name=""
+          id=""
+          #remail
+        />
+        <label for="">password (pistol) </label>
+        <input
+          type="password"
+          placeholder="type a password"
+          name=""
+          id=""
+          #rpassword
+        />
+        <button
+          class="regi"
+          (click)="
+            register_send(rusername.value, remail.value, rpassword.value)
+          "
+        >
+          Sign Up
+        </button>
+      </div>
+      <img class="left-img" src="/assets/images/img2.png" alt="" />
+      <img class="right-img" src="/assets/images/img3.png" alt="" />
+    </div>
+  </div>
+</div>
+
+<!-- logged in view -->
+<div *ngIf="loginStatus" class="logged-in-view"><h1>Muhahaha</h1></div>

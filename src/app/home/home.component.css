@@ -1,0 +1,126 @@
+.logged-out-view {
+  padding-top: 120px;
+}
+.sign-container {
+  width: 50%;
+  /* border: 1px solid blue; */
+  min-height: 100px;
+  height: auto;
+  margin-left: 15%;
+}
+.sign-tab > button {
+  z-index: 2;
+  border: none;
+  padding: 10px;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin-right: 1%;
+  background-color: rgb(182, 182, 182);
+  /* border-right: 2px solid #073450; */
+}
+.sign-tab > button:hover {
+  color: white;
+  background-color: #073450;
+}
+
+.login-window {
+  padding-top: 100px;
+  /* display: none; */
+}
+.register-window {
+  display: none;
+  padding-top: 100px;
+}
+.left-img {
+  z-index: -1;
+  left: 5%;
+  top: 0%;
+  position: fixed;
+  height: 500px;
+  /* float: left; */
+}
+.right-img {
+  z-index: -1;
+  right: 5%;
+  top: 0%;
+  position: fixed;
+  height: 500px;
+  /* float: left; */
+}
+
+.main-login {
+  position: fixed;
+  border-radius: 10px;
+  left: 34%;
+  top: 20%;
+  border-top: 2px solid rgb(199, 199, 199);
+  border-left: 2px solid rgb(199, 199, 199);
+  min-height: 400px;
+  height: auto;
+  width: 30%;
+  text-align: center;
+}
+.main-login > h1 {
+  padding: 10px;
+  color: rgb(83, 83, 83);
+  font-weight: lighter;
+}
+.main-login > label {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  /* border: 1px solid silver; */
+  border-radius: 10px;
+  /* width: 80%; */
+  margin-left: 11%;
+  float: left;
+}
+.main-login > input {
+  margin-bottom: 20px;
+  border: 1px solid silver;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 5%;
+}
+.main-login > button {
+  width: 30%;
+  border: none;
+  border-radius: 10px;
+  background-color: #073450;
+  color: white;
+  padding: 5px;
+  font-size: 1.3em;
+}
+.main-login > h2 {
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: lighter;
+  font-size: 1em;
+}
+.main-login > h2:hover {
+  color: #073450;
+}
+
+@media screen and (min-width: 200px) and (max-width: 900px) {
+  .right-img {
+    display: none;
+  }
+  .main-login {
+    /* top: 21%; */
+    width: 80%;
+    left: 10%;
+  }
+  .login {
+    top: 90px;
+    left: 5%;
+    position: fixed;
+  }
+  .register {
+    position: fixed;
+    top: 90px;
+    right: 5%;
+  }
+  .sign-tab > button {
+    padding: 5px;
+  }
+}
