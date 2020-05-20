@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div class="post-container">
+  <h1>Posts</h1>
+  <div
+    *ngFor="let data of postList"
+    (click)="getComments(data.id)"
+    class="post-tabs"
+  >
+    <h1>{{ data.title }}</h1>
+    <p>{{ data.body }}</p>
+  </div>
+</div>
+<div class="shadow"></div>
+<div class="view-post">
+  <button (click)="close()">Close</button>
+  <h1>{{ title }}</h1>
+  <p>{{ content }}</p>
+  <div *ngFor="let comment of commentList" class="post-comment">
+    <h1>Name: {{ comment.name }}</h1>
+    <p>{{ comment.body }}</p>
+  </div>
+</div>

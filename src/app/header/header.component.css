@@ -28,26 +28,38 @@
   width: 25%;
   cursor: pointer;
 }
-.sign-up > .register {
-  margin-top: 25px;
-  border-radius: 20px;
-  padding: 5px;
-  border: 1px solid white;
-  height: 20px;
-  width: 32%;
-  float: left;
-  margin-left: 20px;
-  cursor: pointer;
-}
+
 .login > h1 {
   color: white;
   font-weight: lighter;
   font-size: 1.2em;
   margin-left: 9px;
 }
-.register > h1 {
-  color: white;
-  font-weight: lighter;
-  font-size: 1.2em;
-  margin-left: 9px;
+
+@media screen and (min-width: 420px) and (max-width: 600px) {
+  .sign-up {
+    width: 30%;
+  }
+  .login {
+    /* border: none; */
+    width: 50% !important;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 420px) {
+  .sign-up {
+    width: 40%;
+  }
+  .login {
+    /* border: none; */
+    width: 60% !important;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .sign-up {
+    width: 17%;
+  }
+  .login {
+    /* border: none; */
+    width: 60% !important;
+  }
 }

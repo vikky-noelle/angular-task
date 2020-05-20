@@ -1,6 +1,7 @@
 import { PostService } from './../shared/post.service';
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,11 @@ export class HomeComponent implements OnInit {
   ) as HTMLCollectionOf<HTMLElement>;
 
   loginStatus;
-  constructor(private cookie: CookieService, private post: PostService) {}
+  constructor(
+    private cookie: CookieService,
+    private post: PostService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     console.log(this.cookie.check('loggedIn'));
@@ -37,10 +42,10 @@ export class HomeComponent implements OnInit {
       this.post.LoginCheck(email, password).subscribe(
         (res) => {
           console.log(res);
-          alert('Successful Login');
           this.cookie.set('username', email);
           this.cookie.set('loggedIn', 'true');
           this.loginStatus = true;
+          this.router.navigate(['/login-logout']);
         },
         (err) => {
           alert('Wrong email or password');
@@ -59,6 +64,7 @@ export class HomeComponent implements OnInit {
           this.cookie.set('username', email);
           this.cookie.set('loggedIn', 'true');
           this.loginStatus = true;
+          this.router.navigate(['/login-logout']);
         },
         (err) => {
           alert('Error in registering');

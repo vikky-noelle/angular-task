@@ -12,4 +12,10 @@ export class GetService {
       'http://localhost:3000/getDetails?username=' + username
     );
   }
+  getPosts() {
+    return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  }
+  getComments() {
+    return this.http.get('https://jsonplaceholder.typicode.com/comments');
+  }
 }

@@ -69,4 +69,19 @@
 </div>
 
 <!-- logged in view -->
-<div *ngIf="loginStatus" class="logged-in-view"><h1>Muhahaha</h1></div>
+<div *ngIf="loginStatus" class="logged-in-view">
+  <h1>Dashboard</h1>
+  <div class="tab-view">
+    <div class="tabs" routerLink="/tasks">
+      <img src="/assets/images/tasks.jpg" alt="" />
+    </div>
+    <div class="tabs" routerLink="/posts">
+      <img src="/assets/images/posts.jpg" alt="" />
+      <h1>Posts</h1>
+    </div>
+    <div class="tabs" routerLink="/albums">
+      <img src="assets/images/albums.jpeg" alt="" />
+      <h1>Albums</h1>
+    </div>
+  </div>
+</div>

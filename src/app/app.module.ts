@@ -1,3 +1,4 @@
+import { PostService } from './shared/post.service';
 import { CookieService } from 'ngx-cookie-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -7,11 +8,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GetService } from './shared/get.service';
+import { LoginLogoutComponent } from './login-logout/login-logout.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { PostsComponent } from './posts/posts.component';
+import { AlbumsComponent } from './albums/albums.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent],
+  declarations: [AppComponent, HomeComponent, HeaderComponent, LoginLogoutComponent, TasksComponent, PostsComponent, AlbumsComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
-  providers: [CookieService],
+  providers: [CookieService, GetService, PostService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
