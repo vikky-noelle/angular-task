@@ -13,6 +13,18 @@
   color: white;
   font-size: 2.2em;
 }
+.menu {
+  margin-left: 37%;
+  float: left;
+  color: white;
+}
+.menu > div {
+  cursor: pointer;
+  margin-top: 20px;
+}
+.menu > div > h1 {
+  font-weight: lighter;
+}
 .sign-up {
   float: right;
   width: 20%;
@@ -44,6 +56,13 @@
     /* border: none; */
     width: 50% !important;
   }
+  .menu {
+    padding-top: 6px;
+    margin-left: 10%;
+  }
+  .menu h1 {
+    font-size: 1.6em;
+  }
 }
 @media screen and (min-width: 200px) and (max-width: 420px) {
   .sign-up {
@@ -52,6 +71,9 @@
   .login {
     /* border: none; */
     width: 60% !important;
+  }
+  .menu {
+    display: none;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 800px) {

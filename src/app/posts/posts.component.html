@@ -15,6 +15,11 @@
   <button (click)="close()">Close</button>
   <h1>{{ title }}</h1>
   <p>{{ content }}</p>
+  <img
+    *ngIf="commentList.length == 0"
+    src="/assets/images/loading.gif"
+    alt=""
+  />
   <div *ngFor="let comment of commentList" class="post-comment">
     <h1>Name: {{ comment.name }}</h1>
     <p>{{ comment.body }}</p>
