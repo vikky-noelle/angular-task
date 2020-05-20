@@ -6,6 +6,7 @@ Hopefully you like what you see!
 If you are interested, do check my other work in angular and nodejs!
 
 [Angular and nodejs project](https://github.com/vikky-noelle/osculent-project)
+And
 [Backend with authentication and sqlite](https://github.com/vikky-noelle/virgo-backend)
 
 ## Development server
