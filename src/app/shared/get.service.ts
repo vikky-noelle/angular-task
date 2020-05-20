@@ -18,4 +18,10 @@ export class GetService {
   getComments() {
     return this.http.get('https://jsonplaceholder.typicode.com/comments');
   }
+  getAlbums() {
+    return this.http.get('https://jsonplaceholder.typicode.com/albums');
+  }
+  getPhotos() {
+    return this.http.get('https://jsonplaceholder.typicode.com/photos');
+  }
 }

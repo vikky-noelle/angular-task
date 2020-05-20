@@ -1,0 +1,91 @@
+.album-container {
+  padding-top: 100px;
+  width: 90%;
+  margin-left: 5%;
+  /* text-align: center; */
+}
+.album-container > h1 {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.album-tabs {
+  cursor: pointer;
+  width: 80%;
+  height: auto;
+  border-bottom: 1px solid silver;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  transition: ease-in-out 0.2s;
+}
+.album-tabs:hover {
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  /* border-left: 1px solid silver; */
+  /* transform: scale(1.1); */
+}
+.album-tabs > h1 {
+  font-size: 1em;
+  padding: 10px;
+}
+.album-tabs > p {
+  padding: 10px;
+}
+.shadow {
+  display: none;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.album-view {
+  position: absolute;
+  top: 100px;
+  left: 14%;
+  width: 73%;
+  height: 80vh;
+  background-color: white;
+  overflow-y: scroll;
+}
+.album-view > h1 {
+  padding: 10px;
+}
+.album-view > img {
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  transition: ease-in-out 0.5s;
+}
+.album-view > img:hover {
+  transform: scale(1.4);
+}
+.shadow-two {
+  display: none;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.shadow-two > button,
+.shadow > button {
+  position: fixed;
+  right: 2%;
+  top: 90px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.single-image {
+  top: 90px;
+  /* display: none; */
+  position: fixed;
+  z-index: 4;
+  height: 500px;
+  width: 500px;
+  left: 32%;
+}
