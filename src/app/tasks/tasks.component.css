@@ -1,0 +1,83 @@
+.task-container {
+  padding-top: 120px;
+  width: 80%;
+  margin-left: 10%;
+  min-height: 100px;
+}
+.task-container > h1 {
+  text-align: center;
+}
+.task-tabs {
+  border: 1px solid silver;
+  background-color: #073450;
+  margin-bottom: 20px;
+  width: 40%;
+  height: auto;
+  min-height: 50px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.task-tabs > h1 {
+  font-size: 1.2em;
+  padding: 10px;
+  color: white;
+  font-weight: lighter;
+}
+.task-tabs > h2 {
+  padding: 10px;
+  font-weight: lighter;
+  font-size: 0.9em;
+  color: wheat;
+}
+.task-tabs > button {
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+.create-tab {
+  text-align: center;
+  min-height: 200px;
+  border: 1px solid silver;
+  top: 300px;
+  right: 10%;
+  width: 30%;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  /* position: fixed; */
+}
+.create-tab > h1 {
+  font-weight: lighter;
+  padding: 10px;
+}
+.create-tab > input {
+  border: 1px solid #073450;
+  padding: 10px;
+  margin: 10px;
+  width: 80%;
+  font-size: 1.3em;
+}
+.create-tab > button {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .task-tabs {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .create-tab {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .create-tab {
+    position: fixed;
+  }
+}

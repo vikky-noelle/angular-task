@@ -89,3 +89,31 @@
   width: 500px;
   left: 32%;
 }
+@media screen and (min-width: 720px) and (max-width: 850px) {
+  .single-image {
+    left: 20%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 720px) {
+  .single-image {
+    top: 200px;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 340px) and (max-width: 600px) {
+  .single-image {
+    top: 200px;
+    height: 300px;
+    width: 300px;
+    left: 10%;
+  }
+}
+@media screen and (min-width: 200px) and (max-width: 340px) {
+  .single-image {
+    top: 200px;
+    height: 250px;
+    width: 250px;
+    left: 7%;
+  }
+}

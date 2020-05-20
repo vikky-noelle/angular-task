@@ -24,4 +24,9 @@ export class GetService {
   getPhotos() {
     return this.http.get('https://jsonplaceholder.typicode.com/photos');
   }
+  getTodos(id) {
+    return this.http.get(
+      'https://jsonplaceholder.typicode.com/todos?userId=' + id
+    );
+  }
 }

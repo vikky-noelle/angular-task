@@ -16,6 +16,12 @@
   <div class="album-view">
     <h1>{{ title }}</h1>
     <img
+      style="text-align: center;"
+      *ngIf="photos.length == 0"
+      src="/assets/images/loading.gif"
+      alt=""
+    />
+    <img
       *ngFor="let image of photos"
       (click)="openImage(image.url)"
       src="{{ image.thumbnailUrl }}"
