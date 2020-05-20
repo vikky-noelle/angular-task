@@ -5,6 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Hopefully you like what you see!
 If you are interested, do check my other work in angular and nodejs!
 
+[Angular and nodejs project](https://github.com/vikky-noelle/osculent-project)
+[Backend with authentication and sqlite](https://github.com/vikky-noelle/virgo-backend)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
