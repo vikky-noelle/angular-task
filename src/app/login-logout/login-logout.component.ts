@@ -10,7 +10,8 @@ export class LoginLogoutComponent implements OnInit {
   constructor(private router: Router) {}
   interval;
   ngOnInit(): void {
-    this.interval = setInterval(() => {
+    this.interval = setTimeout(() => {
+      console.log('hello');
       this.router.navigate(['/']);
     }, 1000);
   }

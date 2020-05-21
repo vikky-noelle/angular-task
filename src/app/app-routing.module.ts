@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'login-logout', component: LoginLogoutComponent },
   { path: 'tasks', component: TasksComponent },
   { path: 'posts', component: PostsComponent },

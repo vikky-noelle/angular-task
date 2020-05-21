@@ -1,11 +1,30 @@
 <div class="header">
   <div class="logo" routerLink="">V i r g o</div>
-  <div class="menu">
-    <div routerLink=""><h1>Home</h1></div>
+  <div *ngIf="status" class="desktop-nav">
+    <div routerLink="/"><h1>Home</h1></div>
+    <div routerLink="/tasks"><h1>Tasks</h1></div>
+    <div routerLink="/posts"><h1>Posts</h1></div>
+    <div routerLink="/albums"><h1>Albums</h1></div>
+    <div (click)="openlogout()"><h1>Logout</h1></div>
   </div>
-  <div class="sign-up">
+  <img
+    *ngIf="status"
+    (click)="openmenu()"
+    class="menu-icon"
+    src="assets/images/menuicon.jpg"
+    alt=""
+  />
+  <div *ngIf="status" class="mobile-nav-container"></div>
+  <div class="mobile-nav">
+    <div routerLink="/"><h1>Home</h1></div>
+    <div routerLink="/tasks"><h1>Tasks</h1></div>
+    <div routerLink="/posts"><h1>Posts</h1></div>
+    <div routerLink="/albums"><h1>Albums</h1></div>
+    <div (click)="openlogout()"><h1>Logout</h1></div>
+  </div>
+  <!-- <div class="sign-up">
     <div *ngIf="status" class="login" (click)="openlogout()">
       <h1>Logout</h1>
     </div>
-  </div>
+  </div> -->
 </div>

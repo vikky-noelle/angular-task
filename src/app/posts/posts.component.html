@@ -1,6 +1,11 @@
 <app-header></app-header>
 <div class="post-container">
   <h1>Posts</h1>
+
+  <mat-spinner
+    *ngIf="postList.length == 0"
+    style="margin: 0 auto;"
+  ></mat-spinner>
   <div
     *ngFor="let data of postList"
     (click)="getComments(data.id)"
@@ -15,11 +20,15 @@
   <button (click)="close()">Close</button>
   <h1>{{ title }}</h1>
   <p>{{ content }}</p>
-  <img
+  <mat-spinner
+    *ngIf="commentList.length == 0"
+    style="margin: 0 auto;"
+  ></mat-spinner>
+  <!-- <img
     *ngIf="commentList.length == 0"
     src="/assets/images/loading.gif"
     alt=""
-  />
+  /> -->
   <div *ngFor="let comment of commentList" class="post-comment">
     <h1>Name: {{ comment.name }}</h1>
     <p>{{ comment.body }}</p>

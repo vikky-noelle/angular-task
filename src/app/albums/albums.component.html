@@ -1,6 +1,10 @@
 <app-header></app-header>
 <div class="album-container">
   <h1>Albums</h1>
+  <mat-spinner
+    *ngIf="albumList.length == 0"
+    style="margin: 0 auto;"
+  ></mat-spinner>
   <div
     *ngFor="let data of albumList"
     (click)="openGallery(data.id, data.title)"
@@ -15,12 +19,16 @@
   <button (click)="closeGallery()">Close</button>
   <div class="album-view">
     <h1>{{ title }}</h1>
-    <img
+    <mat-spinner
+      *ngIf="photos.length == 0"
+      style="margin: 0 auto;"
+    ></mat-spinner>
+    <!-- <img
       style="text-align: center;"
       *ngIf="photos.length == 0"
       src="/assets/images/loading.gif"
       alt=""
-    />
+    /> -->
     <img
       *ngFor="let image of photos"
       (click)="openImage(image.url)"

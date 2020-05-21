@@ -14,10 +14,25 @@ import { TasksComponent } from './tasks/tasks.component';
 import { PostsComponent } from './posts/posts.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HeaderComponent, LoginLogoutComponent, TasksComponent, PostsComponent, AlbumsComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HeaderComponent,
+    LoginLogoutComponent,
+    TasksComponent,
+    PostsComponent,
+    AlbumsComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule,
+  ],
   providers: [CookieService, GetService, PostService],
   bootstrap: [AppComponent],
 })

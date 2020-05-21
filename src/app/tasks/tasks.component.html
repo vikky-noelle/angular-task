@@ -2,6 +2,10 @@
 
 <div class="task-container">
   <h1>Tasks</h1>
+  <mat-spinner
+    *ngIf="todoList.length == 0"
+    style="margin-top: 200px; margin-left: 10%;"
+  ></mat-spinner>
   <div class="create-tab">
     <h1>Create Task</h1>
     <input type="text" placeholder="name of the task" #name />
