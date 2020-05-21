@@ -13,10 +13,11 @@ import { LoginLogoutComponent } from './login-logout/login-logout.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { PostsComponent } from './posts/posts.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, HeaderComponent, LoginLogoutComponent, TasksComponent, PostsComponent, AlbumsComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, BrowserAnimationsModule],
   providers: [CookieService, GetService, PostService],
   bootstrap: [AppComponent],
 })
